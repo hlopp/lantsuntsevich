@@ -1,0 +1,363 @@
+[2015-04-13T22:18:35+03:00] INFO: Forking chef instance to converge...
+[2015-04-13T22:18:35+03:00] DEBUG: Fork successful. Waiting for new chef pid: 21487
+[2015-04-13T22:18:35+03:00] DEBUG: Forked instance now converging
+[2015-04-13T22:18:35+03:00] INFO: *** Chef 12.2.1 ***
+[2015-04-13T22:18:35+03:00] INFO: Chef-client pid: 21487
+[2015-04-13T22:18:35+03:00] DEBUG: Chef-client request_id: e65515c5-a308-490f-93db-09269bfdbef7
+[2015-04-13T22:18:37+03:00] DEBUG: Building node object for localhost
+[2015-04-13T22:18:37+03:00] DEBUG: Extracting run list from JSON attributes provided on command line
+[2015-04-13T22:18:37+03:00] INFO: Setting the run_list to ["recipe[nginx::default]", "recipe[iptables::default]"] from CLI options
+[2015-04-13T22:18:37+03:00] DEBUG: Applying attributes from json file
+[2015-04-13T22:18:37+03:00] DEBUG: Platform is centos version 6.6
+[2015-04-13T22:18:37+03:00] INFO: Run List is [recipe[nginx::default], recipe[iptables::default]]
+[2015-04-13T22:18:37+03:00] INFO: Run List expands to [nginx::default, iptables::default]
+[2015-04-13T22:18:37+03:00] INFO: Starting Chef Run for localhost
+[2015-04-13T22:18:37+03:00] INFO: Running start handlers
+[2015-04-13T22:18:37+03:00] INFO: Start handlers complete.
+[2015-04-13T22:18:37+03:00] DEBUG: Cookbooks to compile: [:apt, :rsyslog, :bluepill, :"build-essential", :ohai, :yum, :"yum-epel", :runit, :nginx, :iptables]
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook apt's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/libraries/helpers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook apt's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/libraries/matchers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook apt's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/libraries/network.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook rsyslog's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/libraries/helpers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook build-essential's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/build-essential/libraries/matchers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook build-essential's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/build-essential/libraries/timing.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook build-essential's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/build-essential/libraries/xcode_command_line_tools.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook yum's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/libraries/matchers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook runit's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/libraries/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook runit's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/libraries/helpers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook runit's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/libraries/matchers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook runit's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/libraries/provider_runit_service.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook runit's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/libraries/resource_runit_service.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading cookbook nginx's library file: /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/libraries/matchers.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook apt's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute apt::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook rsyslog's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute rsyslog::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook bluepill's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/bluepill/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute bluepill::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook build-essential's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/build-essential/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute build-essential::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook ohai's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute ohai::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/attributes/main.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum::main
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel-debuginfo.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel-debuginfo
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel-source.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel-source
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel-testing-debuginfo.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel-testing-debuginfo
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel-testing-source.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel-testing-source
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel-testing.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel-testing
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook yum-epel's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum-epel/attributes/epel.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute yum-epel::epel
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook runit's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/runit/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute runit::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/default.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::default
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/auth_request.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::auth_request
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/devel.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::devel
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/echo.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::echo
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/geoip.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::geoip
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/headers_more.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::headers_more
+[2015-04-13T22:18:37+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/lua.rb
+[2015-04-13T22:18:37+03:00] DEBUG: Loading Attribute nginx::lua
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/naxsi.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::naxsi
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/openssl_source.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::openssl_source
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/pagespeed.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::pagespeed
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/passenger.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::passenger
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/rate_limiting.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::rate_limiting
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/repo.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::repo
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/set_misc.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::set_misc
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/socketproxy.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::socketproxy
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/source.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::source
+[2015-04-13T22:18:38+03:00] DEBUG: I am not loading attribute file nginx::default, because I have already seen it.
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/status.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::status
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/syslog.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::syslog
+[2015-04-13T22:18:38+03:00] DEBUG: Node localhost loading cookbook nginx's attribute file /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/attributes/upload_progress.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Attribute nginx::upload_progress
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook apt's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/providers/preference.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/providers/preference.rb into a provider named apt_preference defined in Chef::Provider::AptPreference
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook apt's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/providers/repository.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/providers/repository.rb into a provider named apt_repository defined in Chef::Provider::AptRepository
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook apt's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/resources/preference.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/resources/preference.rb into a resource named apt_preference defined in Chef::Resource::AptPreference
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook apt's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/resources/repository.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/apt/resources/repository.rb into a resource named apt_repository defined in Chef::Resource::AptRepository
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook rsyslog's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/providers/file_input.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/providers/file_input.rb into a provider named rsyslog_file_input defined in Chef::Provider::RsyslogFileInput
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook rsyslog's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/resources/file_input.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/rsyslog/resources/file_input.rb into a resource named rsyslog_file_input defined in Chef::Resource::RsyslogFileInput
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook bluepill's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/bluepill/providers/service.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/bluepill/providers/service.rb into a provider named bluepill_service defined in Chef::Provider::BluepillService
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook bluepill's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/bluepill/resources/service.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/bluepill/resources/service.rb into a resource named bluepill_service defined in Chef::Resource::BluepillService
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook ohai's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/providers/hint.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/providers/hint.rb into a provider named ohai_hint defined in Chef::Provider::OhaiHint
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook ohai's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/resources/hint.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/resources/hint.rb into a resource named ohai_hint defined in Chef::Resource::OhaiHint
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook yum's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/globalconfig.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/globalconfig.rb into a provider named yum_globalconfig defined in Chef::Provider::YumGlobalconfig
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook yum's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/repository.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/repository.rb into a provider named yum_repository defined in Chef::Provider::YumRepository
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook yum's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/resources/globalconfig.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/resources/globalconfig.rb into a resource named yum_globalconfig defined in Chef::Resource::YumGlobalconfig
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook yum's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/resources/repository.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/resources/repository.rb into a resource named yum_repository defined in Chef::Resource::YumRepository
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook iptables's providers from /home/natallia_la/chef-solo/my_cookbook/cookbooks/iptables/providers/rule.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/iptables/providers/rule.rb into a provider named iptables_rule defined in Chef::Provider::IptablesRule
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook iptables's resources from /home/natallia_la/chef-solo/my_cookbook/cookbooks/iptables/resources/rule.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loaded contents of /home/natallia_la/chef-solo/my_cookbook/cookbooks/iptables/resources/rule.rb into a resource named iptables_rule defined in Chef::Resource::IptablesRule
+[2015-04-13T22:18:38+03:00] DEBUG: Loading cookbook nginx's definitions from /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/definitions/nginx_site.rb
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Recipe nginx::default via include_recipe
+[2015-04-13T22:18:38+03:00] DEBUG: Found recipe default in cookbook nginx
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Recipe nginx::package via include_recipe
+[2015-04-13T22:18:38+03:00] DEBUG: Found recipe package in cookbook nginx
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Recipe nginx::ohai_plugin via include_recipe
+[2015-04-13T22:18:38+03:00] DEBUG: Found recipe ohai_plugin in cookbook nginx
+[2015-04-13T22:18:38+03:00] DEBUG: Loading Recipe ohai::default via include_recipe
+[2015-04-13T22:18:38+03:00] DEBUG: Found recipe default in cookbook ohai
+[2015-04-13T22:18:38+03:00] INFO: ohai plugins will be at: /etc/chef/ohai_plugins
+[2015-04-13T22:18:38+03:00] INFO: Processing remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action create (ohai::default line 33)
+[2015-04-13T22:18:38+03:00] DEBUG: providers for generic remote_directory resource enabled on node include: [Chef::Provider::RemoteDirectory]
+[2015-04-13T22:18:38+03:00] DEBUG: providers that refused resource remote_directory[/etc/chef/ohai_plugins for cookbook ohai] were: []
+[2015-04-13T22:18:38+03:00] DEBUG: providers that support resource remote_directory[/etc/chef/ohai_plugins for cookbook ohai] include: [Chef::Provider::RemoteDirectory]
+[2015-04-13T22:18:38+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::RemoteDirectory]
+[2015-04-13T22:18:38+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:38+03:00] DEBUG: found target_uid == nil, so no owner was specified on resource, not managing owner
+[2015-04-13T22:18:38+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:38+03:00] INFO: Processing cookbook_file[/etc/chef/ohai_plugins/README] action create (dynamically defined)
+[2015-04-13T22:18:38+03:00] DEBUG: cookbook_file[/etc/chef/ohai_plugins/README] checksumming file at /etc/chef/ohai_plugins/README.
+[2015-04-13T22:18:38+03:00] DEBUG: cookbook_file[/etc/chef/ohai_plugins/README] staging /home/natallia_la/chef-solo/my_cookbook/cookbooks/ohai/files/default/plugins/README to /etc/chef/ohai_plugins/.README20150413-21487-1g1lx5i
+[2015-04-13T22:18:38+03:00] DEBUG: calculating checksum of /etc/chef/ohai_plugins/.README20150413-21487-1g1lx5i to compare with 775fa7e0b1d0937be8de9baaf39a0d52b8947159a64f4270ded3f5fa2dbe96bf
+[2015-04-13T22:18:38+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:38+03:00] DEBUG: found target_uid == nil, so no owner was specified on resource, not managing owner
+[2015-04-13T22:18:38+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:38+03:00] INFO: Processing ohai[custom_plugins] action reload (ohai::default line 47)
+[2015-04-13T22:18:38+03:00] DEBUG: providers for generic ohai resource enabled on node include: []
+[2015-04-13T22:18:38+03:00] DEBUG: providers that refused resource ohai[custom_plugins] were: []
+[2015-04-13T22:18:38+03:00] DEBUG: providers that support resource ohai[custom_plugins] include: []
+[2015-04-13T22:18:38+03:00] DEBUG: no providers supported the resource, falling back to enabled handlers
+[2015-04-13T22:18:38+03:00] DEBUG: providers that survived replacement include: []
+[2015-04-13T22:18:38+03:00] DEBUG: dynamic provider resolver FAILED to resolve a provider
+[2015-04-13T22:18:38+03:00] DEBUG: Platform centos version 6.6 found
+[2015-04-13T22:18:40+03:00] INFO: ohai[custom_plugins] reloaded
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe yum-epel via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe default in cookbook yum-epel
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe nginx::commons via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe commons in cookbook nginx
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe nginx::commons_dir via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe commons_dir in cookbook nginx
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe nginx::commons_script via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe commons_script in cookbook nginx
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe nginx::commons_conf via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe commons_conf in cookbook nginx
+[2015-04-13T22:18:40+03:00] DEBUG: ivars which did not match with the prior resource: [:@action, :@supports]
+[2015-04-13T22:18:40+03:00] WARN: Cloning resource attributes for service[nginx] from prior resource (CHEF-3694)
+[2015-04-13T22:18:40+03:00] WARN: Previous service[nginx]: /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/recipes/package.rb:47:in `from_file'
+[2015-04-13T22:18:40+03:00] WARN: Current  service[nginx]: /home/natallia_la/chef-solo/my_cookbook/cookbooks/nginx/recipes/default.rb:24:in `from_file'
+[2015-04-13T22:18:40+03:00] DEBUG: Loading Recipe iptables::default via include_recipe
+[2015-04-13T22:18:40+03:00] DEBUG: Found recipe default in cookbook iptables
+[2015-04-13T22:18:40+03:00] DEBUG: Loading from cookbook_path: /home/natallia_la/chef-solo/my_cookbook/cookbooks
+[2015-04-13T22:18:40+03:00] DEBUG: Converging node localhost
+[2015-04-13T22:18:40+03:00] INFO: Processing ohai[reload_nginx] action nothing (nginx::ohai_plugin line 22)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping ohai[reload_nginx] due to action :nothing
+[2015-04-13T22:18:40+03:00] INFO: Processing template[/etc/chef/ohai_plugins/nginx.rb] action create (nginx::ohai_plugin line 27)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[/etc/chef/ohai_plugins/nginx.rb] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[/etc/chef/ohai_plugins/nginx.rb] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[/etc/chef/ohai_plugins/nginx.rb] checksumming file at /etc/chef/ohai_plugins/nginx.rb.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-1noja7o to compare with 9f7e82b8733a2767f60826efee82e9cbf103ee7337a7a543be9fd4f754421504
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing remote_directory[/etc/chef/ohai_plugins for cookbook ohai] action nothing (ohai::default line 33)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping remote_directory[/etc/chef/ohai_plugins for cookbook ohai] due to action :nothing
+[2015-04-13T22:18:40+03:00] INFO: Processing ohai[custom_plugins] action nothing (ohai::default line 47)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping ohai[custom_plugins] due to action :nothing
+[2015-04-13T22:18:40+03:00] INFO: Processing yum_repository[epel] action create (yum-epel::default line 22)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic yum_repository resource enabled on node include: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource yum_repository[epel] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource yum_repository[epel] include: []
+[2015-04-13T22:18:40+03:00] DEBUG: no providers supported the resource, falling back to enabled handlers
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: []
+[2015-04-13T22:18:40+03:00] DEBUG: dynamic provider resolver FAILED to resolve a provider
+[2015-04-13T22:18:40+03:00] DEBUG: Platform centos version 6.6 found
+[2015-04-13T22:18:40+03:00] INFO: Processing template[/etc/yum.repos.d/epel.repo] action create (/home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/repository.rb line 39)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[/etc/yum.repos.d/epel.repo] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[/etc/yum.repos.d/epel.repo] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[/etc/yum.repos.d/epel.repo] checksumming file at /etc/yum.repos.d/epel.repo.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-1u2b74e to compare with b897332a289034ba20315c8dd5a8185695d31cc021725b5dd34672dec21f7f61
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == nil, so no owner was specified on resource, not managing owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:40+03:00] INFO: Processing execute[yum-makecache-epel] action nothing (/home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/repository.rb line 55)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping execute[yum-makecache-epel] due to action :nothing
+[2015-04-13T22:18:40+03:00] INFO: Processing ruby_block[yum-cache-reload-epel] action nothing (/home/natallia_la/chef-solo/my_cookbook/cookbooks/yum/providers/repository.rb line 62)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping ruby_block[yum-cache-reload-epel] due to action :nothing
+[2015-04-13T22:18:40+03:00] INFO: Processing yum_package[nginx] action install (nginx::package line 41)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping yum_package[nginx] due to not_if command `which nginx`
+[2015-04-13T22:18:40+03:00] INFO: Processing service[nginx] action enable (nginx::package line 47)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic service resource enabled on node include: [Chef::Provider::Service::Init, Chef::Provider::Service::Redhat, Chef::Provider::Service::Upstart]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource service[nginx] were: [Chef::Provider::Service::Upstart]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource service[nginx] include: [Chef::Provider::Service::Init, Chef::Provider::Service::Redhat]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Service::Redhat]
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] supports status, running
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] is running
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] already enabled - nothing to do
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/etc/nginx] action create (nginx::commons_dir line 22)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/etc/nginx] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/etc/nginx] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/var/log/nginx] action create (nginx::commons_dir line 29)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/var/log/nginx] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/var/log/nginx] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/var/run] action create (nginx::commons_dir line 36)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/var/run] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/var/run] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/etc/nginx/sites-available] action create (nginx::commons_dir line 44)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/etc/nginx/sites-available] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/etc/nginx/sites-available] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/etc/nginx/sites-enabled] action create (nginx::commons_dir line 44)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/etc/nginx/sites-enabled] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/etc/nginx/sites-enabled] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing directory[/etc/nginx/conf.d] action create (nginx::commons_dir line 44)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource directory[/etc/nginx/conf.d] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource directory[/etc/nginx/conf.d] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing template[/usr/sbin/nxensite] action create (nginx::commons_script line 23)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[/usr/sbin/nxensite] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[/usr/sbin/nxensite] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[/usr/sbin/nxensite] checksumming file at /usr/sbin/nxensite.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-1aqr8dp to compare with fa46fbecd281e6162559d076d2b2e02a54b348713b7dca7f3368cef9e7e6520c
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing template[/usr/sbin/nxdissite] action create (nginx::commons_script line 23)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[/usr/sbin/nxdissite] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[/usr/sbin/nxdissite] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[/usr/sbin/nxdissite] checksumming file at /usr/sbin/nxdissite.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-yjaogf to compare with cc16ecb85d1439b13b8e2e085090c9d4b5167f57542238cac20c2e9e8864e4d6
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing template[nginx.conf] action create (nginx::commons_conf line 22)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[nginx.conf] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[nginx.conf] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[nginx.conf] checksumming file at /etc/nginx/nginx.conf.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-6m7x53 to compare with a285ebc2598ff1ffaeeab68e5d677e55b519acb86c60c1eeed6f5eef573095bf
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing template[/etc/nginx/sites-available/default] action create (nginx::commons_conf line 32)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource template[/etc/nginx/sites-available/default] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource template[/etc/nginx/sites-available/default] include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:40+03:00] DEBUG: template[/etc/nginx/sites-available/default] checksumming file at /etc/nginx/sites-available/default.
+[2015-04-13T22:18:40+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-1fwgcw to compare with 6abe3127e15af77f5e68b9f923f710223a3efb504254a4312037412a9397e5e0
+[2015-04-13T22:18:40+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:40+03:00] DEBUG: found target_uid == current_uid, not updating owner
+[2015-04-13T22:18:40+03:00] DEBUG: found target_gid == current_gid, not updating group
+[2015-04-13T22:18:40+03:00] INFO: Processing execute[nxensite default] action run (nginx::commons_conf line 32)
+[2015-04-13T22:18:40+03:00] DEBUG: Skipping execute[nxensite default] due to not_if ruby block
+[2015-04-13T22:18:40+03:00] INFO: Processing service[nginx] action start (nginx::default line 24)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic service resource enabled on node include: [Chef::Provider::Service::Init, Chef::Provider::Service::Redhat, Chef::Provider::Service::Upstart]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource service[nginx] were: [Chef::Provider::Service::Upstart]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource service[nginx] include: [Chef::Provider::Service::Init, Chef::Provider::Service::Redhat]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Service::Redhat]
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] supports status, running
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] is running
+[2015-04-13T22:18:40+03:00] DEBUG: service[nginx] already running - nothing to do
+[2015-04-13T22:18:40+03:00] INFO: Processing yum_package[iptables] action install (iptables::default line 23)
+[2015-04-13T22:18:40+03:00] DEBUG: providers for generic yum_package resource enabled on node include: [Chef::Provider::Package::Yum]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that refused resource yum_package[iptables] were: []
+[2015-04-13T22:18:40+03:00] DEBUG: providers that support resource yum_package[iptables] include: [Chef::Provider::Package::Yum]
+[2015-04-13T22:18:40+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Package::Yum]
+[2015-04-13T22:18:44+03:00] DEBUG: yum_package[iptables] checking yum info for iptables
+[2015-04-13T22:18:44+03:00] DEBUG: yum_package[iptables] installed version: ["1.4.7-14.el6"] candidate version: 1.4.7-14.el6
+[2015-04-13T22:18:44+03:00] DEBUG: yum_package[iptables] iptables 1.4.7-14.el6 already installed
+[2015-04-13T22:18:44+03:00] DEBUG: yum_package[iptables] is already installed - nothing to do
+[2015-04-13T22:18:44+03:00] INFO: Processing execute[rebuild-iptables] action nothing (iptables::default line 26)
+[2015-04-13T22:18:44+03:00] DEBUG: Skipping execute[rebuild-iptables] due to action :nothing
+[2015-04-13T22:18:44+03:00] INFO: Processing directory[/etc/iptables.d] action create (iptables::default line 31)
+[2015-04-13T22:18:44+03:00] DEBUG: providers for generic directory resource enabled on node include: [Chef::Provider::Directory]
+[2015-04-13T22:18:44+03:00] DEBUG: providers that refused resource directory[/etc/iptables.d] were: []
+[2015-04-13T22:18:44+03:00] DEBUG: providers that support resource directory[/etc/iptables.d] include: [Chef::Provider::Directory]
+[2015-04-13T22:18:44+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Directory]
+[2015-04-13T22:18:44+03:00] DEBUG: found target_mode == nil, so no mode was specified on resource, not managing mode
+[2015-04-13T22:18:44+03:00] DEBUG: found target_uid == nil, so no owner was specified on resource, not managing owner
+[2015-04-13T22:18:44+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:44+03:00] INFO: Processing template[/usr/sbin/rebuild-iptables] action create (iptables::default line 35)
+[2015-04-13T22:18:44+03:00] DEBUG: providers for generic template resource enabled on node include: [Chef::Provider::Template]
+[2015-04-13T22:18:44+03:00] DEBUG: providers that refused resource template[/usr/sbin/rebuild-iptables] were: []
+[2015-04-13T22:18:44+03:00] DEBUG: providers that support resource template[/usr/sbin/rebuild-iptables] include: [Chef::Provider::Template]
+[2015-04-13T22:18:44+03:00] DEBUG: providers that survived replacement include: [Chef::Provider::Template]
+[2015-04-13T22:18:44+03:00] DEBUG: template[/usr/sbin/rebuild-iptables] checksumming file at /usr/sbin/rebuild-iptables.
+[2015-04-13T22:18:44+03:00] DEBUG: calculating checksum of /tmp/chef-rendered-template20150413-21487-2y74dd to compare with aa6fc4c8807482c93cfe1dc91a29dfc2a88f5f75ee9f3c35eaa8de222c2cffb4
+[2015-04-13T22:18:44+03:00] DEBUG: found target_mode == current_mode, not updating mode
+[2015-04-13T22:18:44+03:00] DEBUG: found target_uid == nil, so no owner was specified on resource, not managing owner
+[2015-04-13T22:18:44+03:00] DEBUG: found target_gid == nil, so no group was specified on resource, not managing group
+[2015-04-13T22:18:44+03:00] INFO: Chef Run complete in 6.675633872 seconds
+[2015-04-13T22:18:44+03:00] INFO: Skipping removal of unused files from the cache
+[2015-04-13T22:18:44+03:00] INFO: Running report handlers
+[2015-04-13T22:18:44+03:00] INFO: Report handlers complete
+[2015-04-13T22:18:44+03:00] DEBUG: Forked instance successfully reaped (pid: 21487)
+[2015-04-13T22:18:44+03:00] DEBUG: Exiting
