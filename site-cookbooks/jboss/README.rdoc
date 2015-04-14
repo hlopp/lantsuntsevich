@@ -22,7 +22,3 @@ java 1.6
 
 = USAGE:
 
-Accept 
-
-Author: Bryan W. Berry <bryan.berry@gmail.com>
-License: Apache v2.0
