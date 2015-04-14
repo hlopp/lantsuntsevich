@@ -2,9 +2,6 @@
 # Cookbook Name:: jboss
 # Recipe:: default
 #
-# Copyright 2011, Bryan W. Berry
-#
-# license Apache v2.0
 #
 
 jboss_home = node['jboss']['jboss_home']
