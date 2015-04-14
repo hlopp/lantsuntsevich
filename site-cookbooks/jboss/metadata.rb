@@ -1,6 +1,6 @@
 name		 "jboss"
-maintainer       "Bryan Berry"
-maintainer_email "bryan.berry@gmail.com"
+maintainer       "hlopp"
+maintainer_email "b1@g1.com"
 license          "Apache v2.0"
 description      "Installs/Configures jboss8"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
