@@ -7,6 +7,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "0.0.3"
 
 depends "java"
+depends "chef-solo-search"
 
 recipe "jboss", "installs jboss8 from the jboss community site"
 

@@ -32,6 +32,7 @@
   },
   "recipes": {
     "jboss": "installs jboss from the jboss community site"
+    "java": "install oracle java"
   },
   "version": "0.0.3"
 }
