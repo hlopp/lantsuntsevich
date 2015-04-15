@@ -29,7 +29,7 @@ if [ -s $JBOSS_HOME ] ; then
 fi
 
 function start(){
-    echo "Starting JBoss AS 7.0.0"
+    echo "Starting JBoss AS 8.2.0"
     cd ${JBOSS_HOME}/bin/
     sudo -u $JBOSS_USER sh ./standalone.sh > /dev/null 2>&1 &
 }
@@ -39,7 +39,7 @@ function stop(){
     if [ -z "${jboss_running}" ] ; then
 	echo "JBoss is not running"
     else
-	echo "Stopping JBoss AS 7.0.0"
+	echo "Stopping JBoss AS 8.2.0"
         cd ${JBOSS_HOME}/bin
 	sudo -u $JBOSS_USER sh ./jboss-cli.sh --connect command=:shutdown
 	echo "Checking for any remaining processes"
