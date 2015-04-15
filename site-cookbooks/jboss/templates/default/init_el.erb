@@ -41,7 +41,7 @@ function stop(){
     else
 	echo "Stopping JBoss AS 7.0.0"
         cd ${JBOSS_HOME}/bin
-	sudo -u $JBOSS_USER sh ./jboss-admin.sh --connect command=:shutdown
+	sudo -u $JBOSS_USER sh ./jboss-cli.sh --connect command=:shutdown
 	echo "Checking for any remaining processes"
 	sleep 5
 	jboss_pids=$(ps -ef | grep java | grep -v grep | awk '{ printf $2" " }')
