@@ -3,12 +3,9 @@
   "json_class": "Chef::Node",
   "chef_type": "node",
   "chef_environment": "apache_env",
-  "normal": {
-    "fqdn": "192.168.33.15"
-  },
+  "normal": {"fqdn": "192.168.33.15"},
   "default": {},
   "override": {},
-  "run_list": [
-    "role[apache_web_server_role]",
-  ]
+  "run_list": ["role[apache_web_server_role]"]
 }
+

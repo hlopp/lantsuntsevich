@@ -1,18 +1,16 @@
 {
-  "name": "nginx_web_server_role",
+  "name": "apache_web_server_role",
   "chef_type": "role",
   "json_class": "Chef::Role",
   "override_attributes": {
-    "web": {"web_server_type":"nginx"}
+    "web": {"web_server_type":"apache"}
   },
-  "description": "install nginx",
+  "description": "install apache",
   "run_list": [
     "recipe[web::install]"
   ],
   "env_run_lists" : {
-    "nginx": [
-        "recipe[web::install]"
-    ]
+    "apache": ["recipe[web::install]"]
    }
 }
 
