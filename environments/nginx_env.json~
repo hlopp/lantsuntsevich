@@ -1,0 +1,11 @@
+{
+  "name": "nginx",
+  "description": "nginx environment",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+	  "web": {"web_server_type":"nginx"}
+	},
+  "cookbook_versions": { 
+  }
+}
