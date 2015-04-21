@@ -1,0 +1,14 @@
+DEPENDENCIES
+  apache_web_server_role
+    path: cookbooks/apache_web_server_role
+  nginx_web_server_role
+    path: cookbooks/nginx_web_server_role
+  web
+    path: cookbooks/web
+
+GRAPH
+  apache_web_server_role (0.1.0)
+    web (>= 0.0.0)
+  nginx_web_server_role (0.1.0)
+    web (>= 0.0.0)
+  web (0.1.0)

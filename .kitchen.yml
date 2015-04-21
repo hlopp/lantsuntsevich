@@ -1,0 +1,14 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: precise32
+
+suites:
+  - name: default
+    run_list: role[apache_web_server_role]
+    attributes:
