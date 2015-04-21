@@ -21,8 +21,8 @@ action :setup_web_server do
     name node['web']['config_path']
   	source "nginx/default.conf.erb"
   	variables(
-  	  :port => node[web][server_port],
-  	  :interface => node[web][server_interface]
+  	  :port => node['web']['server_port'],
+  	  :interface => node['web']['server_interface']
       )
 	end
 end
