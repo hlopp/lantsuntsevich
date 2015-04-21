@@ -17,6 +17,14 @@ end
 
 action :setup_web_server do
   Chef::Log.info "Setup action for nginx"
+  template "setup_config" do
+    name node['web']['config_path']
+  	source "nginx/default.conf.erb"
+  	variables(
+  	  :port => node['web']['server_port'],
+  	  :interface => node['web']['server_interface']
+      )
+	end
 end
 
 action :stop do
@@ -29,6 +37,7 @@ end
 action :start do
     Chef::Log.info "Starting nginx"
     service "nginx" do
+        supports :status => true, :restart => true, :reload => true
         action :start
     end
 end

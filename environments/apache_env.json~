@@ -7,6 +7,5 @@
 	  "web": {"web_server_type":"apache"}
 	},
   "cookbook_versions": { 
-  },
-  "run_list": ["recipe[apache_web_server_role]"]
+  }
 }

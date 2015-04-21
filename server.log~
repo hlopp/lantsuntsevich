@@ -1,0 +1,23 @@
+df28@nb:~/chef-solo/lantsuntsevich$ knife bootstrap 192.168.33.15 -N apache_node -i ~/chef-solo/vms/vm1/.vagrant/machines/default/virtualbox/private_key --ssh-user vagrant --sudo --use-sudo-password --ssh-password vagrant -r apache_web_server_role
+Doing old-style registration with the validation key at /home/df28/chef-solo/lantsuntsevich/.chef/olo-validator.pem...
+Delete your validation key in order to use your user credentials instead
+
+Connecting to 192.168.33.15
+192.168.33.15 Starting first Chef Client run...
+192.168.33.15 Starting Chef Client, version 12.2.1
+192.168.33.15 resolving cookbooks for run list: ["apache_web_server_role"]
+192.168.33.15 Synchronizing Cookbooks:
+192.168.33.15   - apache_web_server_role
+192.168.33.15   - web
+192.168.33.15 Compiling Cookbooks...
+192.168.33.15 Converging 1 resources
+192.168.33.15 Recipe: web::install
+192.168.33.15   * web_web[server] action install
+192.168.33.15     * apt_package[apache2] action install
+192.168.33.15       - install version 2.2.22-1ubuntu1.8 of package apache2
+192.168.33.15   
+192.168.33.15 
+192.168.33.15 Running handlers:
+192.168.33.15 Running handlers complete
+192.168.33.15 Chef Client finished, 2/2 resources updated in 44.831566772 seconds
+

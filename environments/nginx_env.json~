@@ -1,5 +1,5 @@
 {
-  "name": "nginx",
+  "name": "nginx_env",
   "description": "nginx environment",
   "chef_type": "environment",
   "json_class": "Chef::Environment",

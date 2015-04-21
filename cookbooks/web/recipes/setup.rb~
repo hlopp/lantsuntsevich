@@ -1,0 +1,9 @@
+provider_name = "web_"+node['web']['web_server_type']
+
+web "setup_web_server" do
+  name "web"
+	provider "#{provider_name}"
+	action :setup_web_server
+end
+
+

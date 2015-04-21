@@ -9,7 +9,10 @@
   },
   "default": {
     "web": {
-      "web_server_type": "apache"
+      "web_server_type": "apache",
+      "config_path":"/etc/httpd/conf/httpd.conf",
+      "server_port":"80",
+      "server_interface":"0.0.0.0"
     }
   },
   "run_list": [

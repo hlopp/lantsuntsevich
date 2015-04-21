@@ -3,15 +3,20 @@
   "chef_type": "role",
   "json_class": "Chef::Role",
   "override_attributes": {
-    "web": {"web_server_type":"nginx"}
+    "web": {
+        "web_server_type":"nginx",
+        "config_path":"/etc/httpd/conf/httpd.conf",
+        "server_port":"80",
+        "server_interface":"0.0.0.0"
+      }
   },
   "description": "install nginx",
   "run_list": [
-    "recipe[web::install]"
+    "recipe[nginx_web_server_role]"
   ],
   "env_run_lists" : {
     "nginx_env": [
-        "recipe[web::install]"
+        "recipe[nginx_web_server_role]"
     ]
    }
 }
