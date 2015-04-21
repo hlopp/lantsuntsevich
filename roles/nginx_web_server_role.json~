@@ -10,7 +10,7 @@
     "recipe[web::install]"
   ],
   "env_run_lists" : {
-    "nginx": [
+    "nginx_env": [
         "recipe[web::install]"
     ]
    }

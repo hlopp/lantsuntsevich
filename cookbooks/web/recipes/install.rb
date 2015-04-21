@@ -1,7 +1,7 @@
-include_recipe "web::#{node['web']['web_server_type']}"
+provider_name = "web_"+node['web']['web_server_type']
 
 web "server" do
-	provider "#{node[:web_server_type]}"
+	provider "#{provider_name}"
 	action :install
 end
 

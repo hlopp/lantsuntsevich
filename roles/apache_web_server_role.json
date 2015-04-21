@@ -7,10 +7,10 @@
   },
   "description": "install apache",
   "run_list": [
-    "recipe[web::install]"
+    "recipe[apache_web_server_role]"
   ],
   "env_run_lists" : {
-    "apache_env": ["recipe[web::install]"]
+    "apache_env": ["recipe[apache_web_server_role]"]
    }
 }
 

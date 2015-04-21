@@ -7,11 +7,11 @@
   },
   "description": "install nginx",
   "run_list": [
-    "recipe[web::install]"
+    "recipe[nginx_web_server_role]"
   ],
   "env_run_lists" : {
     "nginx_env": [
-        "recipe[web::install]"
+        "recipe[nginx_web_server_role]"
     ]
    }
 }

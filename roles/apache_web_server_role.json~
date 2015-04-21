@@ -10,7 +10,7 @@
     "recipe[web::install]"
   ],
   "env_run_lists" : {
-    "apache": ["recipe[web::install]"]
+    "apache_env": ["recipe[web::install]"]
    }
 }
 

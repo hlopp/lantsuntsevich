@@ -1,5 +1,5 @@
 {
-  "name": "apache",
+  "name": "apache_env",
   "description": "apache environment",
   "chef_type": "environment",
   "json_class": "Chef::Environment",
@@ -7,5 +7,6 @@
 	  "web": {"web_server_type":"apache"}
 	},
   "cookbook_versions": { 
-  }
+  },
+  "run_list": ["recipe[apache_web_server_role]"]
 }
