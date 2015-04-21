@@ -1,0 +1,67 @@
+knife bootstrap 192.168.33.15 -N apache_node -i ~/chef-solo/vms/vm1/.vagrant/machines/default/virtualbox/private_key --ssh-user vagrant --sudo --use-sudo-password --ssh-password vagrant -r apache_web_server_role
+Doing old-style registration with the validation key at /home/df28/chef-solo/lantsuntsevich/.chef/olo-validator.pem...
+Delete your validation key in order to use your user credentials instead
+
+Connecting to 192.168.33.15
+192.168.33.15 Starting first Chef Client run...
+192.168.33.15 Starting Chef Client, version 12.2.1
+192.168.33.15 resolving cookbooks for run list: ["apache_web_server_role"]
+192.168.33.15 Synchronizing Cookbooks:
+192.168.33.15   - web
+192.168.33.15   - apache_web_server_role
+192.168.33.15 Compiling Cookbooks...
+192.168.33.15 [2015-04-21T13:33:57+00:00] WARN: Cloning resource attributes for web_web[server] from prior resource (CHEF-3694)
+192.168.33.15 [2015-04-21T13:33:57+00:00] WARN: Previous web_web[server]: /var/chef/cache/cookbooks/web/recipes/install.rb:3:in `from_file'
+192.168.33.15 [2015-04-21T13:33:57+00:00] WARN: Current  web_web[server]: /var/chef/cache/cookbooks/web/recipes/setup.rb:3:in `from_file'
+192.168.33.15 Converging 2 resources
+192.168.33.15 Recipe: web::install
+192.168.33.15   * web_web[server] action install
+192.168.33.15     * apt_package[apache2] action install (up to date)
+192.168.33.15      (up to date)
+192.168.33.15 Recipe: web::setup
+192.168.33.15   * web_web[server] action setup_web_server
+192.168.33.15     * template[/etc/apache2/httpd.conf] action create
+192.168.33.15       - update content in file /etc/apache2/httpd.conf from e3b0c4 to 0c4809
+192.168.33.15       --- /etc/apache2/httpd.conf	2015-04-21 08:31:23.728272108 +0000
+192.168.33.15       +++ /tmp/chef-rendered-template20150421-12761-1ihddix	2015-04-21 13:33:57.617060285 +0000
+192.168.33.15       @@ -1 +1,2 @@
+192.168.33.15       +Listen 0.0.0.0:80
+192.168.33.15   
+192.168.33.15 
+192.168.33.15 Running handlers:
+192.168.33.15 Running handlers complete
+192.168.33.15 Chef Client finished, 2/4 resources updated in 10.906147686 seconds
+
+
+
+knife bootstrap 192.168.33.16 -N nginx_node -i ~/chef-solo/vms/vm2/.vagrant/machines/default/virtualbox/private_key --ssh-user vagrant --sudo --use-sudo-password --ssh-password vagrant -r nginx_web_server_role
+Doing old-style registration with the validation key at /home/df28/chef-solo/lantsuntsevich/.chef/olo-validator.pem...
+Delete your validation key in order to use your user credentials instead
+
+Connecting to 192.168.33.16
+192.168.33.16 Starting first Chef Client run...
+192.168.33.16 Starting Chef Client, version 12.2.1
+192.168.33.16 resolving cookbooks for run list: ["nginx_web_server_role"]
+192.168.33.16 Synchronizing Cookbooks:
+192.168.33.16   - nginx_web_server_role
+192.168.33.16   - web
+192.168.33.16 Compiling Cookbooks...
+192.168.33.16 [2015-04-21T13:35:41+00:00] WARN: Cloning resource attributes for web_web[server] from prior resource (CHEF-3694)
+192.168.33.16 [2015-04-21T13:35:41+00:00] WARN: Previous web_web[server]: /var/chef/cache/cookbooks/web/recipes/install.rb:3:in `from_file'
+192.168.33.16 [2015-04-21T13:35:41+00:00] WARN: Current  web_web[server]: /var/chef/cache/cookbooks/web/recipes/setup.rb:3:in `from_file'
+192.168.33.16 Converging 2 resources
+192.168.33.16 Recipe: web::install
+192.168.33.16   * web_web[server] action install
+192.168.33.16     * apt_package[nginx] action install (up to date)
+192.168.33.16      (up to date)
+192.168.33.16 Recipe: web::setup
+192.168.33.16   * web_web[server] action setup_web_server
+192.168.33.16     * template[/etc/nginx/conf.d/default.conf] action create (up to date)
+192.168.33.16      (up to date)
+192.168.33.16 
+192.168.33.16 Running handlers:
+192.168.33.16 Running handlers complete
+192.168.33.16 Chef Client finished, 0/4 resources updated in 9.635979093 seconds
+
+
+

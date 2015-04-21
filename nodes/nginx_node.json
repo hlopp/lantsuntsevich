@@ -1,0 +1,17 @@
+{
+  "name": "nginx_node",
+  "json_class": "Chef::Node",
+  "chef_type": "node",
+  "chef_environment": "nginx_env",
+  "normal": {"fqdn":"192.168.33.16"},
+  "default": {
+    "web": {
+      "web_server_type": "nginx",
+      "config_path":"/etc/nginx/conf.d/default.conf",
+      "server_port":"80",
+      "server_interface":"0.0.0.0"
+    }
+  },
+  "override": {},
+  "run_list": ["recipe[nginx_web_server_role]"]
+}

@@ -11,4 +11,4 @@ chef_server_url          "https://api.opscode.com/organizations/olo"
 cookbook_path            ["#{current_dir}/../cookbooks"]
 role_path                ["#{current_dir}/../roles"]
 node_path                ["#{current_dir}/../nodes"]
-environment_path         ["#{current_dir}/../environments"]
+environment_path                ["#{current_dir}/../environments"]
