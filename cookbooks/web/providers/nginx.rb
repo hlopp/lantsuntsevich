@@ -19,7 +19,7 @@ action :setup_web_server do
   Chef::Log.info "Setup action for nginx"
   template node['web']['config_path'] do
     name node['web']['config_path']
-  	source "nginx/default.conf.erb"
+  	source "nginx.conf.erb"
   	variables(
   	  :port => node['web']['server_port'],
   	  :interface => node['web']['server_interface']

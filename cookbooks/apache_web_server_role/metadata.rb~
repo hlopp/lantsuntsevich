@@ -1,4 +1,7 @@
 name "apache_web_server_role"
+maintainer       'EPAM Lab'
+maintainer_email 'Natallia_Lantsuntsevich@epam.com'
+license          'All rights reserved'
 description "Run-list for apache role"
 version "0.1.0"
 depends "web"

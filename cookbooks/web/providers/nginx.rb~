@@ -17,7 +17,7 @@ end
 
 action :setup_web_server do
   Chef::Log.info "Setup action for nginx"
-  template "setup_config" do
+  template node['web']['config_path'] do
     name node['web']['config_path']
   	source "nginx/default.conf.erb"
   	variables(

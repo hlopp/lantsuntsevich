@@ -19,7 +19,7 @@ action :setup_web_server do
   Chef::Log.info("Setup action for apache2")
   template node['web']['config_path'] do
     name node['web']['config_path']
-  	source "apache/httpd.conf.erb"
+  	source "apache_httpd.conf.erb"
   	variables(
   	  :port => node['web']['server_port'],
   	  :interface => node['web']['server_interface']
