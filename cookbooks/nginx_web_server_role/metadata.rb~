@@ -1,5 +1,0 @@
-name "nginx_web_server_role"
-description "Run-list for nginx role"
-version "0.1.0"
-depends "web"
-
