@@ -1,0 +1,20 @@
+foodcritic cookbooks/apache_web_server_role/
+FC008: Generated cookbook metadata needs updating: cookbooks/apache_web_server_role/metadata.rb:2
+FC008: Generated cookbook metadata needs updating: cookbooks/apache_web_server_role/metadata.rb:3
+FC011: Missing README in markdown format: cookbooks/apache_web_server_role/README.md:1
+
+
+foodcritic cookbooks/nginx_web_server_role/
+FC008: Generated cookbook metadata needs updating: cookbooks/nginx_web_server_role/metadata.rb:2
+FC008: Generated cookbook metadata needs updating: cookbooks/nginx_web_server_role/metadata.rb:3
+FC011: Missing README in markdown format: cookbooks/nginx_web_server_role/README.md:1
+
+
+foodcritic cookbooks/web
+FC002: Avoid string interpolation where not required: cookbooks/web/recipes/install.rb:4
+FC002: Avoid string interpolation where not required: cookbooks/web/recipes/setup.rb:4
+FC008: Generated cookbook metadata needs updating: cookbooks/web/metadata.rb:2
+FC008: Generated cookbook metadata needs updating: cookbooks/web/metadata.rb:3
+FC033: Missing template: cookbooks/web/providers/apache.rb:20
+FC033: Missing template: cookbooks/web/providers/nginx.rb:20
+

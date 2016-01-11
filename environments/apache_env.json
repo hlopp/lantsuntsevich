@@ -1,0 +1,16 @@
+{
+  "name": "apache_env",
+  "description": "apache environment",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+    "web": {
+      "web_server_type": "apache",
+      "config_path":"/etc/httpd/conf/httpd.conf",
+      "server_port":"80",
+      "server_interface":"0.0.0.0"
+    }
+	},
+  "cookbook_versions": { 
+  }
+}
