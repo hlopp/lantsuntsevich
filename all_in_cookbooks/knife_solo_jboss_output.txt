@@ -1,0 +1,47 @@
+Running Chef on localhost...
+Checking Chef version...
+Installing Berkshelf cookbooks to 'cookbooks'...
+Resolving cookbook dependencies...
+Using chef-solo-search (0.5.1)
+Using java (1.31.0)
+Vendoring chef-solo-search (0.5.1) to cookbooks/chef-solo-search
+Vendoring java (1.31.0) to cookbooks/java
+Uploading the kitchen...
+Generating solo config...
+Running Chef...
+Starting Chef Client, version 12.2.1[0m
+Compiling Cookbooks...[0m
+/home/vagrant/chef-solo/cookbooks-2/chef-solo-search/libraries/vendor/chef/solr_query/lucene_nodes.rb:22: warning: already initialized constant Lucene::SEP
+/home/vagrant/chef-solo/cookbooks-2/chef-solo-search/libraries/vendor/chef/solr_query/lucene_nodes.rb:22: warning: previous definition of SEP was here
+[2015-04-14T22:23:46+00:00] WARN: Cloning resource attributes for bash[put_files] from prior resource (CHEF-3694)
+[2015-04-14T22:23:46+00:00] WARN: Previous bash[put_files]: /home/vagrant/chef-solo/cookbooks-3/jboss/recipes/default.rb:52:in `from_file'
+[2015-04-14T22:23:46+00:00] WARN: Current  bash[put_files]: /home/vagrant/chef-solo/cookbooks-3/jboss/recipes/deploy.rb:34:in `from_file'
+Converging 15 resources[0m
+Recipe: java::set_java_home[0m
+  * ruby_block[set-env-java-home] action run
+    [32m- execute the ruby block set-env-java-home[0m
+[0m  * directory[/etc/profile.d] action create (up to date)
+  * file[/etc/profile.d/jdk.sh] action create (up to date)
+Recipe: java::oracle[0m
+  * java_ark[jdk] action install (up to date)
+  * java_alternatives[set-java-alternatives] action set (up to date)
+Recipe: java::default_java_symlink[0m
+  * link[/usr/lib/jvm/default-java] action create (up to date)
+Recipe: jboss::default[0m
+  * user[jboss] action create (up to date)
+  * group[jboss] action modify (up to date)
+  * directory[/usr/local/jboss] action create (up to date)
+  * bash[put_files] action run (skipped due to not_if)
+  * directory[/usr/local/jboss/default] action create (up to date)
+  * template[/etc/init.d/jboss] action create (up to date)
+  * service[jboss] action enable (up to date)
+  * service[jboss] action start (up to date)
+  * template[/etc/sudoers.d/jboss] action create (up to date)
+Recipe: jboss::deploy[0m
+  * apt_package[unzip] action install (up to date)
+  * bash[put_files] action run
+    [32m- execute "bash"  "/tmp/chef-script20150414-1506-t5d5i"[0m
+[0m[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 2/16 resources updated in 19.322372443 seconds[0m
