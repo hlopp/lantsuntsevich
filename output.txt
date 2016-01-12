@@ -1,0 +1,39 @@
+Running Chef on 10.6.194.129...
+Checking Chef version...
+user@10.6.194.129's password: 
+user@10.6.194.129's password: 
+Installing Berkshelf cookbooks to 'cookbooks'...
+Resolving cookbook dependencies...
+Using java (1.31.0)
+Vendoring java (1.31.0) to cookbooks/java
+Uploading the kitchen...
+Generating solo config...
+Running Chef...
+Starting Chef Client, version 12.3.0[0m
+Compiling Cookbooks...[0m
+Converging 15 resources[0m
+Recipe: java::set_java_home[0m
+  * ruby_block[set-env-java-home] action run (skipped due to not_if)
+  * directory[/etc/profile.d] action create (up to date)
+  * file[/etc/profile.d/jdk.sh] action create (up to date)
+Recipe: java::oracle[0m
+  * java_ark[jdk] action install (up to date)
+  * java_alternatives[set-java-alternatives] action set (up to date)
+Recipe: bamboo::default[0m
+  * user[bamboo] action create (up to date)
+  * group[bamboo] action create (up to date)
+  * directory[/opt/bamboo] action create (up to date)
+  * remote_file[/tmp/atlassian-bamboo-5.8.1.tar.gz] action create (up to date)
+  * bash[get_files] action run (skipped due to not_if)
+  * directory[/opt/bamboo/atlassian-bamboo-5.8.1] action create (up to date)
+  * cookbook_file[bamboo] action create_if_missing (up to date)
+  * execute[add_chkconfig] action run
+    [32m- execute chkconfig --add bamboo[0m
+[0m  * cookbook_file[bamboo-init.properties] action create (up to date)
+  * service[bamboo] action enable (up to date)
+  * service[bamboo] action start (up to date)
+  * service[iptables] action stop (up to date)
+[0m
+Running handlers:[0m
+Running handlers complete
+[0mChef Client finished, 1/15 resources updated in 8.633440967 seconds[0m
